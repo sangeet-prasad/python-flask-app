@@ -1,4 +1,4 @@
-## <u> python-flask-app </u>
+## python-flask-app
 This is simple demo python app which can deployed on a docker and kubernetes platform such as minikube. 
 
 ## Environment Setup 
@@ -58,7 +58,7 @@ $ kubectl apply -f k8s/deploy.yml
 $ kubectl get po | grep hello-app
 $ kubectl get svc | grep hello-app
 ```
-There should for 4 pods deployed in Running state and one NodePort service running on port 30080.
+There should be for 4 pods deployed in Running state and one NodePort service running on port 30080.
 
 ## Testing
 To test the app 
