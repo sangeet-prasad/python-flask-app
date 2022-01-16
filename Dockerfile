@@ -22,4 +22,4 @@ COPY --chown=appuser:appuser src/. .
 
 EXPOSE 8080
 
-CMD ["python", "/app/app.py"]
+CMD ["python", "app.py"]
