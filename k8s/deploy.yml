@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: sangeetprasad/python-flask-app:latest
+        image: sangeetprasad/python-flask-app:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3080
