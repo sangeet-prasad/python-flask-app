@@ -47,6 +47,14 @@ Clone this repository and navigate to project folder
 ```bash
 $ git clone git@github.com:sangeet-prasad/python-flask-app.git && cd python-flask-app
 ```
+
+### (Optional) If sangeetprasad/python-flask-app cannot be fetched from docker hub
+
+To build the docker image locally
+```bash
+$ sudo docker build -t sangeetprasad/python-flask-app:v1 .
+```
+
 ### Deploy to minikube
 
 ```bash
