@@ -1,0 +1,25 @@
+<!doctype html>
+<title>Hello from Flask</title>
+<body style="background: {{ color }};"></body>
+<div style="color: #e4e4e4;
+    text-align:  center;
+    height: 90px;
+    vertical-align:  middle;">
+{% if name %}
+  <h1>Hello Python from {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+
+  {% if contents %}
+  <textarea rows="10" cols="50">
+    {{ contents }}
+  </textarea>
+  {% endif %}
+
+  <footer>
+    <p>Author: Sangeet Prasad<br>
+    <a href="mailto:sangeetkp@gmail.com">sangeetkp@gmail.com</a><br>
+    IP: {{ local_ip }} </p>
+  </footer>  
+</div>

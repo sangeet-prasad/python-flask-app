@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-app-service
+spec:
+  selector:
+    app: hello-app
+  ports:
+  - protocol: "TCP"
+    port: 8080
+    targetPort: 8080
+    nodePort: 30080
+  type: NodePort
+
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-app
+spec:
+  selector:
+    matchLabels:
+      app: hello-app
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: hello-app
+    spec:
+      containers:
+      - name: hello-app
+        image: sangeetprasad/python-flask-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3080
