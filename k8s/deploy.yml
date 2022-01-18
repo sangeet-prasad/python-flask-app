@@ -34,7 +34,7 @@ spec:
         image: sangeetprasad/python-flask-app:v1
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 3080
+        - containerPort: 8080
         resources:
           requests:
             memory: "64Mi"
